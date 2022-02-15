@@ -1,12 +1,96 @@
 :root{
-    --spotify-main-blue: #141922;
     --spotify-main-black: #000000;
+    --spotify-main-blue: #141922;
     --spotify-main-grey: #282828;
     
     --spotify-secondary-green: #bdff33;
+    --spotify-transparent-black: rgba(0,0,0,0.5);
     
-
     --spotify-main-text-color: #fefefe;
     --spotify-secondary-text-color: #a3a3a3;
 
+    --footer-height: 7%;
 }
+
+/* --------- General Stiling --------- */
+body{
+    background-color: var(--spotify-main-blue);
+}
+/* --------- / General Stiling --------- */
+
+
+/* ---------  Reusable Stiling --------- */
+.flex-container{
+    display: flex;
+}
+/* --------- / Reusable Stiling --------- */
+
+
+
+
+
+/* --------- App Wrapper --------- */
+.app-wrapper{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+/* --------- / App Wrapper --------- */
+
+
+
+
+
+
+/* -------------------- Main Section -------------------  */
+main{
+    height: calc(100% - var(--footer-height));
+    flex-shrink: 1;
+}
+
+
+
+
+
+/* --------- Side Bar --------- */
+.side-bar{
+    background: var(--spotify-main-black);
+    min-width: 10vw;
+}
+/* --------- /Side Bar --------- */
+
+
+
+
+
+
+/* --------- Content Section --------- */
+.content-section{
+    position: relative;
+}
+
+.upgrade-section{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 5vh;
+    background-color: var(--spotify-transparent-black);
+}
+
+/* --------- / Content Section --------- */
+
+
+/* --------------------  Main Section --------------------  */
+
+
+/* ---------------------- Footer ---------------------- */
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    min-height: var(--footer-height);
+    background-color: var(--spotify-main-grey);
+}
+/* ---------------------- / Footer ---------------------- */

@@ -10,9 +10,14 @@
     --spotify-secondary-text-color: #a3a3a3;
 
     --footer-height: 7%;
+
+    --standard-padding: 16px;
 }
 
 /* --------- General Stiling --------- */
+*{
+    color: var(--spotify-main-text-color);
+}
 body{
     background-color: var(--spotify-main-blue);
 }
@@ -56,6 +61,16 @@ main{
 .side-bar{
     background: var(--spotify-main-black);
     min-width: 10vw;
+    padding: var(--standard-padding);
+}
+
+.logo-wrapper img{
+    max-width: 80%;
+
+}
+
+#sml-logo{
+    display: none;
 }
 /* --------- /Side Bar --------- */
 
@@ -67,13 +82,14 @@ main{
 /* --------- Content Section --------- */
 .content-section{
     position: relative;
+    width: 90%;
 }
 
 .upgrade-section{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    min-width: 100%;
     min-height: 5vh;
     background-color: var(--spotify-transparent-black);
 }

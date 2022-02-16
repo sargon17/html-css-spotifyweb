@@ -40,8 +40,10 @@ a:hover i {
 a:hover .svg-icons {
   filter: opacity(1);
 }
-i {
-  cursor: pointer;
+button{
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
 }
 /* --------- / General Stiling --------- */
 
@@ -148,7 +150,19 @@ i{
   right: 0;
   min-width: 100%;
   min-height: 5vh;
+  padding: var(--standard-padding);
   background-color: var(--spotify-transparent-black);
+  display: flex;
+  justify-content: flex-end;
+}
+.upgrd-btn{
+    color: var(--spotify-main-text-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .8em 2em;
+    border: 1px solid var(--spotify-main-text-color);
+    border-radius: 25px;
 }
 
 /* --------- / Content Section --------- */
@@ -202,7 +216,7 @@ footer {
 .fa-play-circle{
     font-size: 2em;
 }
-.player-controlls-wrapper i:hover{
+.player-controlls-wrapper button:hover i{
     color: var(--spotify-main-text-color);
 }
 

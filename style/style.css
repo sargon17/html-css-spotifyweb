@@ -29,7 +29,8 @@ a{
     font-size: 14px;
     font-weight: 600;
 }
-a:hover{
+a:hover,
+a:hover i{
     color: var(--spotify-main-text-color);
 }
 a:hover .svg-icons{
@@ -42,6 +43,10 @@ a:hover .svg-icons{
 .flex-container{
     display: flex;
 }
+.color-white{
+    color: var(--spotify-main-text-color);
+}
+
 /* --------- / Reusable Stiling --------- */
 
 
@@ -76,6 +81,7 @@ main{
     background: var(--spotify-main-black);
     min-width: 10vw;
     padding: var(--standard-padding);
+    padding-bottom: 2px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -104,6 +110,32 @@ nav li, li{
 
 .playlists{
     margin: 1em 0;
+}
+.playlists i{
+    margin-right: .2em;
+    vertical-align: middle;
+    font-size: 29px;
+    transition: var(--standard-transition);
+}
+
+.download-btn{
+    padding: .3em 0;
+    margin: .9em 0;
+    border-bottom: solid 1px var(--spotify-secondary-text-color) ;
+}
+.profile-section{
+    line-height: 1.5em;
+}
+.profile-img{
+    border-radius: 50%;
+    background-color: var(--spotify-secondary-text-color);
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+.profile-name{
+    display: inline-block;
+    vertical-align: super;
 }
 /* --------- /Side Bar --------- */
 

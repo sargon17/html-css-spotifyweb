@@ -101,6 +101,9 @@ li {
   vertical-align: text-bottom;
   margin-right: 0.3em;
 }
+i{
+    transition: var(--standard-transition);
+}
 
 .playlists {
   margin: 1em 0;
@@ -188,6 +191,35 @@ footer {
   font-weight: 500;
 }
 /* / left section - song info */
+
+/* Midle section - player */
+.player-controlls-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+.fa-play-circle{
+    font-size: 2em;
+}
+.player-controlls-wrapper i:hover{
+    color: var(--spotify-main-text-color);
+}
+
+.song-slider-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.song-slider-wrapper span{
+    font-size: 12px;
+    font-weight: 600;
+}
+.song-duration{
+    width: 30vw;
+}
+/* / Midle section - player */
 
 /* right section - volume control */
 .volume-controller {

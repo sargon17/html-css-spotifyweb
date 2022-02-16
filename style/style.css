@@ -8,12 +8,15 @@
 
   --spotify-main-text-color: #fefefe;
   --spotify-secondary-text-color: #a3a3a3;
+  --spotify-tertiary-text-color: #434343;
 
   --footer-height: 8%;
 
   --standard-padding: 16px;
 
   --standard-transition: all 0.1s ease-out;
+
+  --volume-indicator: 30%;
 }
 
 /* --------- General Stiling --------- */
@@ -36,6 +39,9 @@ a:hover i {
 }
 a:hover .svg-icons {
   filter: opacity(1);
+}
+i{
+    cursor: pointer;
 }
 /* --------- / General Stiling --------- */
 
@@ -85,7 +91,7 @@ nav {
 }
 nav li,
 li {
-  line-height: 2em;
+  line-height: 2.3em;
 }
 
 .svg-icons {
@@ -157,8 +163,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: var(--standard-padding);
 }
 
+/* left section - song info */
 .current-song-info{
     justify-content: space-between;
     align-items: center;
@@ -167,7 +175,6 @@ footer {
 .current-album-cover{
     align-items: center;
     gap: 1em;
-    margin: 10px;
 }
 .current-album-cover img{
     width: 3em;
@@ -180,4 +187,52 @@ footer {
     font-size: 0.6em;
     font-weight: 500;
 }
+/* / left section - song info */
+
+/* right section - volume control */
+.volume-controller{
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+.volume-control-bar{
+    padding: 10px 0;
+    cursor: pointer;
+    width: 100px;
+    position: relative;
+}
+.volume-bar{
+    height: 4px;
+    width: 100%;
+    background-color: var(--spotify-tertiary-text-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.volume-control-bar:hover .volume-indicator{
+    background-color: var(--spotify-secondary-green);
+}
+.volume-control-bar:hover .volume-pointer{
+    opacity: 1;
+}
+.volume-indicator{
+    height: 100%;
+    width: var(--volume-indicator);
+    border-radius: 5px;
+    background-color: var(--spotify-secondary-text-color);
+    transition: var(--standard-transition);
+}
+.volume-pointer{
+    height: 10px;
+    width: 10px;
+    background-color: var(--spotify-secondary-green);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: var(--volume-indicator);
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: var(--standard-transition);
+}
+/* / right section - volume control */
+
 /* ---------------------- / Footer ---------------------- */

@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="script/script.js" defer></script>
   <title>Spotify App</title>
 </head>
@@ -133,8 +136,24 @@
       </div>
       <!-- / Footer Right Section -->
 
-      <div><h2>Midle</h2></div>
-      <div><h2>Left</h2></div>
+      <div>
+        <h2>Midle</h2>
+      </div>
+
+      <!-- Footer left section -->
+      <div class=" flex-container volume-controller">
+        <i class="fas fa-list"></i>
+        <i class="fas fa-tv"></i>
+        <i class="fas fa-volume-up"></i>
+        <div class="volume-control-bar">
+          <div class="volume-bar">
+            <div class="volume-indicator"></div>
+          </div>
+          <div class="volume-pointer"></div>
+        </div>
+      </div>
+      <!-- Footer left section -->
+
     </footer>
     <!-- Footer Section -->
   </div>

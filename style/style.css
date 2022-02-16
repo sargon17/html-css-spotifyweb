@@ -16,10 +16,13 @@
 
 /* --------- General Stiling --------- */
 *{
-    color: var(--spotify-main-text-color);
+    color: var(--spotify-secondary-text-color);
 }
 body{
     background-color: var(--spotify-main-blue);
+}
+a:hover{
+    color: var(--spotify-main-text-color);
 }
 /* --------- / General Stiling --------- */
 
@@ -66,9 +69,7 @@ main{
 
 .logo-wrapper img{
     max-width: 80%;
-
 }
-
 #sml-logo{
     display: none;
 }

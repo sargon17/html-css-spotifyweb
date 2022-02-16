@@ -165,6 +165,18 @@ i{
     border-radius: 25px;
 }
 
+.main-content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content a{
+    padding: var(--standard-padding);
+    text-transform: uppercase;
+}
+
+
+
 /* --------- / Content Section --------- */
 
 /* --------------------  Main Section --------------------  */

@@ -12,17 +12,28 @@
     --footer-height: 7%;
 
     --standard-padding: 16px;
+
+    --standard-transition: all .1s ease-out;
 }
 
 /* --------- General Stiling --------- */
 *{
     color: var(--spotify-secondary-text-color);
+    font-family: "Montserrat", sans-serif;
 }
 body{
     background-color: var(--spotify-main-blue);
 }
+a{
+    transition: var(--standard-transition);
+    font-size: 14px;
+    font-weight: 600;
+}
 a:hover{
     color: var(--spotify-main-text-color);
+}
+a:hover .svg-icons{
+    filter: opacity(1);
 }
 /* --------- / General Stiling --------- */
 
@@ -65,6 +76,9 @@ main{
     background: var(--spotify-main-black);
     min-width: 10vw;
     padding: var(--standard-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo-wrapper img{
@@ -72,6 +86,24 @@ main{
 }
 #sml-logo{
     display: none;
+}
+nav{
+    margin: 1em 0;
+}
+nav li, li{
+    line-height: 2em;
+}
+
+.svg-icons{
+    filter: opacity(.4);
+    width: 24px;
+    transition: var(--standard-transition);
+    vertical-align: text-bottom;
+    margin-right: .3em;
+}
+
+.playlists{
+    margin: 1em 0;
 }
 /* --------- /Side Bar --------- */
 

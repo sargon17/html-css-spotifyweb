@@ -1,177 +1,183 @@
-:root{
-    --spotify-main-black: #000000;
-    --spotify-main-blue: #141922;
-    --spotify-main-grey: #282828;
-    
-    --spotify-secondary-green: #bdff33;
-    --spotify-transparent-black: rgba(0,0,0,0.5);
-    
-    --spotify-main-text-color: #fefefe;
-    --spotify-secondary-text-color: #a3a3a3;
+:root {
+  --spotify-main-black: #000000;
+  --spotify-main-blue: #141922;
+  --spotify-main-grey: #282828;
 
-    --footer-height: 7%;
+  --spotify-secondary-green: #bdff33;
+  --spotify-transparent-black: rgba(0, 0, 0, 0.5);
 
-    --standard-padding: 16px;
+  --spotify-main-text-color: #fefefe;
+  --spotify-secondary-text-color: #a3a3a3;
 
-    --standard-transition: all .1s ease-out;
+  --footer-height: 8%;
+
+  --standard-padding: 16px;
+
+  --standard-transition: all 0.1s ease-out;
 }
 
 /* --------- General Stiling --------- */
-*{
-    color: var(--spotify-secondary-text-color);
-    font-family: "Montserrat", sans-serif;
+* {
+  color: var(--spotify-secondary-text-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
-body{
-    background-color: var(--spotify-main-blue);
+body {
+  background-color: var(--spotify-main-blue);
 }
-a{
-    transition: var(--standard-transition);
-    font-size: 14px;
-    font-weight: 600;
+a {
+  transition: var(--standard-transition);
+  font-size: 14px;
+  font-weight: 600;
 }
 a:hover,
-a:hover i{
-    color: var(--spotify-main-text-color);
+a:hover i {
+  color: var(--spotify-main-text-color);
 }
-a:hover .svg-icons{
-    filter: opacity(1);
+a:hover .svg-icons {
+  filter: opacity(1);
 }
 /* --------- / General Stiling --------- */
 
-
 /* ---------  Reusable Stiling --------- */
-.flex-container{
-    display: flex;
+.flex-container {
+  display: flex;
 }
-.color-white{
-    color: var(--spotify-main-text-color);
+.color-white {
+  color: var(--spotify-main-text-color);
 }
 
 /* --------- / Reusable Stiling --------- */
 
-
-
-
-
 /* --------- App Wrapper --------- */
-.app-wrapper{
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+.app-wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 /* --------- / App Wrapper --------- */
 
-
-
-
-
-
 /* -------------------- Main Section -------------------  */
-main{
-    height: calc(100% - var(--footer-height));
-    flex-shrink: 1;
+main {
+  height: calc(100% - var(--footer-height));
+  flex-shrink: 1;
 }
-
-
-
-
 
 /* --------- Side Bar --------- */
-.side-bar{
-    background: var(--spotify-main-black);
-    min-width: 10vw;
-    padding: var(--standard-padding);
-    padding-bottom: 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.side-bar {
+  background: var(--spotify-main-black);
+  min-width: 10vw;
+  padding: var(--standard-padding);
+  padding-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.logo-wrapper img{
-    max-width: 80%;
+.logo-wrapper img {
+  max-width: 80%;
 }
-#sml-logo{
-    display: none;
+#sml-logo {
+  display: none;
 }
-nav{
-    margin: 1em 0;
+nav {
+  margin: 1em 0;
 }
-nav li, li{
-    line-height: 2em;
-}
-
-.svg-icons{
-    filter: opacity(.4);
-    width: 24px;
-    transition: var(--standard-transition);
-    vertical-align: text-bottom;
-    margin-right: .3em;
+nav li,
+li {
+  line-height: 2em;
 }
 
-.playlists{
-    margin: 1em 0;
-}
-.playlists i{
-    margin-right: .2em;
-    vertical-align: middle;
-    font-size: 29px;
-    transition: var(--standard-transition);
+.svg-icons {
+  filter: opacity(0.4);
+  width: 24px;
+  transition: var(--standard-transition);
+  vertical-align: text-bottom;
+  margin-right: 0.3em;
 }
 
-.download-btn{
-    padding: .3em 0;
-    margin: .9em 0;
-    border-bottom: solid 1px var(--spotify-secondary-text-color) ;
+.playlists {
+  margin: 1em 0;
 }
-.profile-section{
-    line-height: 1.5em;
+.playlists i {
+  margin-right: 0.2em;
+  vertical-align: middle;
+  font-size: 29px;
+  transition: var(--standard-transition);
 }
-.profile-img{
-    border-radius: 50%;
-    background-color: var(--spotify-secondary-text-color);
-    width: 28px;
-    height: 28px;
-    display: inline-block;
+
+.download-btn {
+  padding: 0.3em 0;
+  margin: 0.9em 0;
+  border-bottom: solid 1px var(--spotify-secondary-text-color);
 }
-.profile-name{
-    display: inline-block;
-    vertical-align: super;
+.profile-section {
+  line-height: 1.5em;
+}
+.profile-img {
+  border-radius: 50%;
+  background-color: var(--spotify-secondary-text-color);
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+.profile-name {
+  display: inline-block;
+  vertical-align: super;
 }
 /* --------- /Side Bar --------- */
 
-
-
-
-
-
 /* --------- Content Section --------- */
-.content-section{
-    position: relative;
-    width: 90%;
+.content-section {
+  position: relative;
+  width: 90%;
 }
 
-.upgrade-section{
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 5vh;
-    background-color: var(--spotify-transparent-black);
+.upgrade-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 5vh;
+  background-color: var(--spotify-transparent-black);
 }
 
 /* --------- / Content Section --------- */
 
-
 /* --------------------  Main Section --------------------  */
 
-
 /* ---------------------- Footer ---------------------- */
-footer{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100vw;
-    min-height: var(--footer-height);
-    background-color: var(--spotify-main-grey);
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: var(--footer-height);
+  background-color: var(--spotify-main-grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current-song-info{
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+.current-album-cover{
+    align-items: center;
+    gap: 1em;
+    margin: 10px;
+}
+.current-album-cover img{
+    width: 3em;
+}
+.album-info h3{
+    font-size: 0.8em;
+    color: var(--spotify-main-text-color);
+}
+.album-info h5{
+    font-size: 0.6em;
+    font-weight: 500;
 }
 /* ---------------------- / Footer ---------------------- */

@@ -4,6 +4,7 @@ input[type="range"] {
   width: 100%; /* Specific width is required for Firefox. */
   background: transparent; /* Otherwise white in Chrome */
   overflow: hidden;
+  transition: var(--standard-transition);
 }
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -25,7 +26,6 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   margin-top: -3.5px;
   box-shadow: -100vw 0 0 100vw #a3a3a3;
-  transition: var(--standard-transition);
 }
 
 /* Firefox */
@@ -37,7 +37,6 @@ input[type="range"]::-moz-range-thumb {
   background: var(--spotify-secondary-green);
   cursor: pointer;
   opacity: 0;
-  transition: var(--standard-transition);
 }
 input[type="range"]::-moz-range-track {
   width: 100%;
@@ -49,7 +48,6 @@ input[type="range"]::-moz-range-track {
 }
 input[type="range"]::-moz-range-progress {
   background-color: var(--spotify-secondary-text-color);
-  transition: var(--standard-transition);
   border-radius: 5px;
 }
 input[type="range"]:hover::-moz-range-progress {

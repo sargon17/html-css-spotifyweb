@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style/cleaner.css" />
   <link rel="stylesheet" href="style/custom-elements.css">
   <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="media.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
@@ -35,31 +36,31 @@
         </div>
         <div class="side-bar-nav-wrapper">
 
-        <div class="top-sidebar-section">
-          <!-- Side Bar Navigation -->
-          <nav>
-            <ul>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img src="./img/home.svg" alt="" class="svg-icons">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img src="./img/search.svg" alt="" class="svg-icons">
-                  Cerca
-                </a>
-              </li>
-              <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                  <img src="./img/libreria.svg" alt="" class="svg-icons">
-                  La tua libreria
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+          <div class="top-sidebar-section">
+            <!-- Side Bar Navigation -->
+            <nav>
+              <ul>
+                <li class="side-active">
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/home.svg" alt="" class="svg-icons">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/search.svg" alt="" class="svg-icons">
+                    Cerca
+                  </a>
+                </li>
+                <li>
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/libreria.svg" alt="" class="svg-icons">
+                    La tua libreria
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <!-- / Side Bar Navigation -->
           <ul class="playlists">
             <h4 class="color-white">PLAYLIST</h4>
@@ -71,43 +72,43 @@
             </li>
             <li>
               <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
-          </li>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
-          </li>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
-          </li>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
-          </li>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
-          </li>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
-          </li>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
-          </li>
-        </ul>
-        <!-- / Playlists -->
-        <!-- bottom section -->
-        <div class="bottom-sidebar-section">
-          <div class="download-btn">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
-              <img src="./img/download.svg" alt="" class="svg-icons">
-              Installa app
-            </a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
+            </li>
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Nome playlist</a>
+            </li>
+          </ul>
+          <!-- / Playlists -->
+          <!-- bottom section -->
+          <div class="bottom-sidebar-section">
+            <div class="download-btn">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./img/download.svg" alt="" class="svg-icons">
+                Installa app
+              </a>
+            </div>
+            <div class="profile-section">
+              <img src="./img/profile.svg" alt="profile img" class="profile-img">
+              <h3 class="color-white profile-name">John Doe</h3>
+            </div>
           </div>
-          <div class="profile-section">
-            <img src="./img/profile.svg" alt="profile img" class="profile-img">
-            <h3 class="color-white profile-name">John Doe</h3>
-          </div>
-        </div>
 
-        <!-- / bottom section -->
-      </div>
+          <!-- / bottom section -->
+        </div>
       </div>
       <!-- / SIDEBAR -->
 
@@ -119,7 +120,7 @@
         <div class="main-content">
           <nav class="main-content-inner-nav">
             <ul>
-              <li><a href="#">In evidenza</a></li>
+              <li class="bottom-active"><a href="#">In evidenza</a></li>
               <li><a href="#">Podcast</a></li>
               <li><a href="#">Classifiche</a></li>
               <li><a href="#">Generi e mood</a></li>
@@ -127,6 +128,7 @@
               <li><a href="#">Scopri</a></li>
             </ul>
           </nav>
+          <!-- Recently Played -->
           <div class="recently-played music-container">
             <h2 class=" color-white">Recently played</h2>
             <ul class="flex-container music-list">
@@ -162,73 +164,37 @@
               </li>
             </ul>
           </div>
-          <div class="recently-played music-container">
-            <h2 class=" color-white">Recently played</h2>
+          <!-- / Recently Played -->
+
+          <!-- Created For -->
+
+          <div class="created-for music-container">
+            <h2 class=" color-white">Creato per John Doe</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
             <ul class="flex-container music-list">
               <li class="music-card">
-                <img src="./img/metal_lifting.jpg" alt="">
-                <h3 class=" color-white">Heavy Metal</h3>
-                <span>Subtitle</span>
+                <img src="./img/radar.jpeg" alt="">
+                <h3 class=" color-white">Release Radar</h3>
               </li>
               <li class="music-card">
-                <img src="./img/stranger.jpeg" alt="">
-                <h3 class=" color-white">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
-                <span>Kyle Dixon & Michael Stein</span>
-              </li>
-              <li class="music-card">
-                <img src="./img/aquietplace.jpeg" alt="">
-                <h3 class=" color-white">A quiet place</h3>
-                <span>Subtitle</span>
-              </li>
-              <li class="music-card">
-                <img src="./img/split.jpeg" alt="">
-                <h3 class=" color-white">Split</h3>
-                <span>Subtitle</span>
-              </li>
-              <li class="music-card">
-                <img src="./img/cure.jpeg" alt="">
-                <h3 class=" color-white">A cure for wellness</h3>
-                <span>Subtitle</span>
-              </li>
-              <li class="music-card">
-                <img src="./img/sinister.jpeg" alt="">
-                <h3 class=" color-white">Sinister</h3>
-                <span>Subtitle</span>
+                <img src="./img/mixdaily.jpeg" alt="">
+                <h3 class=" color-white">Daily Mix 1</h3>
               </li>
             </ul>
           </div>
+          <!-- /Created For -->
+
           <div class="recently-played music-container">
-            <h2 class=" color-white">Recently played</h2>
+            <h2 class=" color-white">Artisti più popolari</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
             <ul class="flex-container music-list">
               <li class="music-card">
-                <img src="./img/metal_lifting.jpg" alt="">
-                <h3 class=" color-white">Heavy Metal</h3>
-                <span>Subtitle</span>
+                <img src="./img/youg.jpeg" class="artist-img" alt="">
+                <h3 class=" color-white">Lana del Rey</h3>
               </li>
               <li class="music-card">
-                <img src="./img/stranger.jpeg" alt="">
-                <h3 class=" color-white">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
-                <span>Kyle Dixon & Michael Stein</span>
-              </li>
-              <li class="music-card">
-                <img src="./img/aquietplace.jpeg" alt="">
-                <h3 class=" color-white">A quiet place</h3>
-                <span>Subtitle</span>
-              </li>
-              <li class="music-card">
-                <img src="./img/split.jpeg" alt="">
-                <h3 class=" color-white">Split</h3>
-                <span>Subtitle</span>
-              </li>
-              <li class="music-card">
-                <img src="./img/cure.jpeg" alt="">
-                <h3 class=" color-white">A cure for wellness</h3>
-                <span>Subtitle</span>
-              </li>
-              <li class="music-card">
-                <img src="./img/sinister.jpeg" alt="">
-                <h3 class=" color-white">Sinister</h3>
-                <span>Subtitle</span>
+                <img src="./img/einaudi.jpeg" class="artist-img" alt="">
+                <h3 class=" color-white">Ludovico Einaudi</h3>
               </li>
             </ul>
           </div>
@@ -279,7 +245,7 @@
         <div class="song-slider-wrapper">
           <span>0:25</span>
           <div class="song-duration">
-            <input type="range" name="" id="">
+            <input type="range" name="" id="" value="30">
           </div>
           <span>4:35</span>
         </div>
@@ -297,7 +263,7 @@
           <i class="fas fa-volume-up"></i>
         </button>
         <div class="volume-slider">
-          <input type="range" name="" id="" min="0" max="100" step="1">
+          <input type="range" name="" id="" value="30" min="0" max="100" step="1">
         </div>
       </div>
       <!-- Footer left section -->

@@ -1,0 +1,70 @@
+@media only screen and (max-width: 873px) {
+  .music-card {
+    width: calc(97% / 4);
+  }
+
+  .current-song-info,
+  .volume-controller,
+  .current-album-cover {
+    gap: 0.3em;
+  }
+}
+@media only screen and (max-width: 639px) {
+    .music-list{
+        gap: 2%;
+    }
+  .music-card {
+    width: calc(98% / 2);
+  }
+  footer * {
+    font-size: 0.95em;
+  }
+  footer,
+  .upgrade-section,
+  .music-container {
+    padding: 12px;
+  }
+  .like-save {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .like-save button {
+    padding: 2px 6px;
+  }
+}
+@media only screen and (max-width: 552px) {
+    main{
+        padding-left: 60px;
+    }
+    .side-bar{
+        width: 60px;
+    }
+  #sml-logo {
+    display: block;
+    width: 24px;
+  }
+  .small-icon{
+      display: inline;
+  }
+  .side-active::before,
+  .big-icon,
+  .playlists,
+  .text-off,
+  #logo {
+    display: none;
+  }
+  .download-btn{
+      border: none;
+  }
+  .current-song-info,
+  .volume-controller {
+    gap: 0;
+  }
+  .song-duration{
+      width: 120px;
+  }
+  .volume-slider{
+      width: 80px;
+  }
+  
+}

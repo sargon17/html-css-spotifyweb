@@ -51,32 +51,6 @@ button:hover i {
 }
 /* --------- / General Stiling --------- */
 
-/* ---------  Reusable Stiling --------- */
-.flex-container {
-  display: flex;
-}
-.color-white {
-  color: var(--spotify-main-text-color);
-}
-.side-active::before{
-  content: "";
-  display: inline-block;
-  width: 4px;
-  height: 28px;
-  background-color: var(--spotify-secondary-green);
-  margin: 4px 8px -4px -16px;
-}
-.bottom-active::after{
-  content: "";
-  display: block;
-  width: 36px;
-  height: 2px;
-  background-color: var(--spotify-secondary-green);
-  margin: -1px auto;
-
-}
-
-/* --------- / Reusable Stiling --------- */
 
 /* --------- App Wrapper --------- */
 .app-wrapper {
@@ -108,6 +82,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  z-index: 2;
 }
 .side-bar-nav-wrapper {
   display: flex;
@@ -128,6 +103,9 @@ main {
 #sml-logo {
   display: none;
 }
+.small-icon{
+  display: none;
+}
 nav {
   margin: 1em 0;
 }
@@ -135,6 +113,7 @@ nav li,
 li {
   line-height: 2.3em;
 }
+
 
 .svg-icons {
   filter: opacity(0.4);
@@ -226,6 +205,7 @@ li {
 .main-content a {
   padding: var(--standard-padding);
   text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 .music-container{
@@ -311,6 +291,10 @@ footer {
   text-decoration: underline;
   color: var(--spotify-main-text-color);
 }
+.like-save{
+  justify-content: space-between;
+  flex-grow: 1;
+}
 /* / left section - song info */
 
 /* Midle section - player */
@@ -334,7 +318,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 1vw;
 }
 .song-slider-wrapper span {
   font-size: 12px;
@@ -357,3 +341,33 @@ footer {
 /* / right section - volume control */
 
 /* ---------------------- / Footer ---------------------- */
+
+
+
+/* ---------  Reusable Stiling --------- */
+.flex-container {
+  display: flex;
+}
+.color-white {
+  color: var(--spotify-main-text-color);
+  filter: opacity(1);
+}
+.side-active::before{
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 28px;
+  background-color: var(--spotify-secondary-green);
+  margin: 4px 8px -4px -16px;
+}
+.bottom-active::after{
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  background-color: var(--spotify-secondary-green);
+  margin: -1px auto;
+
+}
+
+/* --------- / Reusable Stiling --------- */

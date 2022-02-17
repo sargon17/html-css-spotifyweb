@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style/cleaner.css" />
   <link rel="stylesheet" href="style/custom-elements.css">
   <link rel="stylesheet" href="style/style.css" />
-  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="style/media.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
@@ -41,19 +41,28 @@
             <nav>
               <ul>
                 <li class="side-active">
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/home.svg" alt="" class="svg-icons">
+                  <a href="" class="small-icon">
+                    <img src="./img/home.svg" alt="" class="svg-icons color-white">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer" class="big-icon color-white">
+                    <img src="./img/home.svg" alt="" class="svg-icons color-white">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="" class="small-icon">
+                    <img src="./img/search.svg" alt="" class="svg-icons color-white">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer" class="big-icon color-white">
                     <img src="./img/search.svg" alt="" class="svg-icons">
                     Cerca
                   </a>
                 </li>
                 <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="" class="small-icon">
+                    <img src="./img/libreria.svg" alt="" class="svg-icons color-white">
+                  </a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer" class="big-icon color-white">
                     <img src="./img/libreria.svg" alt="" class="svg-icons">
                     La tua libreria
                   </a>
@@ -96,14 +105,17 @@
           <!-- bottom section -->
           <div class="bottom-sidebar-section">
             <div class="download-btn">
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a href="http://" target="_blank" rel="noopener noreferrer" class="small-icon">
+                <img src="./img/download.svg" alt="" class="svg-icons">
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer" class="big-icon">
                 <img src="./img/download.svg" alt="" class="svg-icons">
                 Installa app
               </a>
             </div>
             <div class="profile-section">
               <img src="./img/profile.svg" alt="profile img" class="profile-img">
-              <h3 class="color-white profile-name">John Doe</h3>
+              <h3 class="color-white profile-name text-off">John Doe</h3>
             </div>
           </div>
 
@@ -178,7 +190,7 @@
               </li>
               <li class="music-card">
                 <img src="./img/mixdaily.jpeg" alt="">
-                <h3 class=" color-white">Daily Mix 1</h3>
+                <h3 class="color-white">Daily Mix 1</h3>
               </li>
             </ul>
           </div>
@@ -215,12 +227,14 @@
             <h5 class="song-name">Brano Nome</h5>
           </div>
         </div>
-        <button>
-          <i class="fa-regular fa-heart"></i>
-        </button>
-        <button>
-          <i class="fa-regular fa-folder"></i>
-        </button>
+        <div class=" flex-container like-save">
+          <button>
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <button>
+            <i class="fa-regular fa-folder"></i>
+          </button>
+        </div>
       </div>
       <!-- / Footer Right Section -->
 

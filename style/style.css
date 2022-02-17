@@ -82,7 +82,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 2;
+  z-index: 3;
 }
 .side-bar-nav-wrapper {
   display: flex;
@@ -286,7 +286,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: var(--standard-padding);
-  z-index: 2;
+  z-index: 4;
 }
 
 /* left section - song info */

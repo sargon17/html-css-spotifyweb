@@ -251,6 +251,7 @@ li {
 }
 .play-btn i{
   font-size: 4em;
+  color: var(--spotify-main-text-color);
 }
 .hover-play:hover .play-btn{
   opacity: 1;

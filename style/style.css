@@ -85,14 +85,13 @@ main {
   background: var(--spotify-main-black);
   width: 200px;
   padding: var(--standard-padding);
-  /* padding-bottom: 80px; */
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   z-index: 1;
 }
 .side-bar-nav-wrapper {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -137,7 +136,7 @@ i {
   flex-direction: column;
   flex-shrink: 2;
   /* flex-basis: 60%; */
-  flex-grow: 2;
+  flex-grow: 10;
   /* max-height: 100%; */
 }
 .playlists i {
@@ -147,10 +146,8 @@ i {
   transition: var(--standard-transition);
 }
 .bottom-sidebar-section {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* flex-shrink: 0; */
   height: 100px;
+
 }
 
 .download-btn {
@@ -177,7 +174,7 @@ i {
 /* --------- Content Section --------- */
 .content-section {
   position: relative;
-  width: 90%;
+  width: 100%;
 }
 
 .upgrade-section {
@@ -201,14 +198,47 @@ i {
   border-radius: 25px;
 }
 
-.main-content .main-content ul {
+.main-content{
+  margin-top: 80px;
+}
+.main-content-inner-nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .main-content a {
   padding: var(--standard-padding);
   text-transform: uppercase;
+}
+
+.music-container{
+  padding: var(--standard-padding);
+}
+.music-container h2{
+  font-size: 1.2em;
+}
+.music-list{
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+.music-card{
+  width: calc(95% / 6);
+  text-align: center;
+  line-height: 1.2em;
+  flex-shrink: 1;
+  margin: 10px 0;
+}
+.music-card img{
+  width: 100%;
+}
+.music-card h3{
+  font-size: 0.8em;
+  margin: 0;
+}
+.music-card span{
+  font-size: .7em;
 }
 
 /* --------- / Content Section --------- */

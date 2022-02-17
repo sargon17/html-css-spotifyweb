@@ -234,6 +234,27 @@ li {
 .music-card img{
   width: 100%;
 }
+.hover-play{
+  position: relative;
+  overflow: hidden;
+}
+.play-btn{
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  position: absolute;
+  background-color: var(--spotify-transparent-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.play-btn i{
+  font-size: 4em;
+}
+.hover-play:hover .play-btn{
+  opacity: 1;
+}
 .music-card h3{
   font-size: 0.8em;
   margin: 0;
@@ -304,10 +325,10 @@ footer {
   gap: 1em;
   align-items: center;
 }
-.fa-play-circle {
+footer .fa-play-circle {
   font-size: 2em;
 }
-.fa-play-circle:hover{
+footer .fa-play-circle:hover{
   transform: scale(1.1);
 }
 .player-controlls-wrapper button:hover i {

@@ -79,3 +79,21 @@ input[type="range"]:hover::-webkit-slider-thumb {
   so use the box shadow for simulating it but it hide the thumb, leave like this */
 
 /* slider */
+
+/* scrollbar */
+html {
+  scrollbar-width: auto;
+  scrollbar-color: #434343 transparent;
+  border-radius: 12px;
+ }
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+	/* border: 6px solid #a3a3a3; */
+	background: #434343;
+	border-radius: 12px 12px 12px 12px;
+	margin: 0px auto;
+}
+/* scrollbar */

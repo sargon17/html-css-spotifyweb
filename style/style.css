@@ -10,7 +10,7 @@
   --spotify-secondary-text-color: #a3a3a3;
   --spotify-tertiary-text-color: #434343;
 
-  --footer-height: 8vh;
+  --footer-height: 70px;
 
   --standard-padding: 16px;
 
@@ -40,10 +40,10 @@ a:hover i {
 a:hover .svg-icons {
   filter: opacity(1);
 }
-button{
-    padding: 4px;
-    background: transparent;
-    cursor: pointer;
+button {
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
 }
 /* --------- / General Stiling --------- */
 
@@ -61,29 +61,51 @@ button{
 .app-wrapper {
   height: 100vh;
   width: 100vw;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
 }
 /* --------- / App Wrapper --------- */
 
 /* -------------------- Main Section -------------------  */
 main {
-  height: calc(100% - var(--footer-height));
+  /* height: calc(100% - var(--footer-height)); */
   flex-shrink: 1;
+  flex-grow: 1;
+  margin-bottom: var(--footer-height);
+  padding-left: 200px;
 }
 
 /* --------- Side Bar --------- */
 .side-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
   background: var(--spotify-main-black);
-  min-width: 10vw;
+  width: 200px;
   padding: var(--standard-padding);
-  padding-bottom: 2px;
+  padding-bottom: var(--footer-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.side-bar-nav-wrapper {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.top-sidebar-section {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
 
 .logo-wrapper img {
   max-width: 80%;
+  flex-grow: 0;
 }
 #sml-logo {
   display: none;
@@ -103,18 +125,25 @@ li {
   vertical-align: text-bottom;
   margin-right: 0.3em;
 }
-i{
-    transition: var(--standard-transition);
+i {
+  transition: var(--standard-transition);
 }
 
 .playlists {
   margin: 1em 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
 }
 .playlists i {
   margin-right: 0.2em;
   vertical-align: middle;
   font-size: 29px;
   transition: var(--standard-transition);
+}
+.bottom-sidebar-section {
+  flex-shrink: 0;
 }
 
 .download-btn {
@@ -155,27 +184,25 @@ i{
   display: flex;
   justify-content: flex-end;
 }
-.upgrd-btn{
-    color: var(--spotify-main-text-color);
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: .8em 2em;
-    border: 1px solid var(--spotify-main-text-color);
-    border-radius: 25px;
+.upgrd-btn {
+  color: var(--spotify-main-text-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.8em 2em;
+  border: 1px solid var(--spotify-main-text-color);
+  border-radius: 25px;
 }
 
-.main-content ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-content .main-content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main-content a{
-    padding: var(--standard-padding);
-    text-transform: uppercase;
+.main-content a {
+  padding: var(--standard-padding);
+  text-transform: uppercase;
 }
-
-
 
 /* --------- / Content Section --------- */
 
@@ -183,16 +210,18 @@ i{
 
 /* ---------------------- Footer ---------------------- */
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   width: 100vw;
+  min-height: fit-content;
   height: var(--footer-height);
   background-color: var(--spotify-main-grey);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--standard-padding);
+  z-index: 2;
 }
 
 /* left section - song info */
@@ -219,31 +248,31 @@ footer {
 /* / left section - song info */
 
 /* Midle section - player */
-.player-controlls-wrapper{
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    align-items: center;
+.player-controlls-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
 }
-.fa-play-circle{
-    font-size: 2em;
+.fa-play-circle {
+  font-size: 2em;
 }
-.player-controlls-wrapper button:hover i{
-    color: var(--spotify-main-text-color);
+.player-controlls-wrapper button:hover i {
+  color: var(--spotify-main-text-color);
 }
 
-.song-slider-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
+.song-slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
 }
-.song-slider-wrapper span{
-    font-size: 12px;
-    font-weight: 600;
+.song-slider-wrapper span {
+  font-size: 12px;
+  font-weight: 600;
 }
-.song-duration{
-    width: 30vw;
+.song-duration {
+  width: 30vw;
 }
 /* / Midle section - player */
 
@@ -253,10 +282,9 @@ footer {
   justify-content: space-between;
   gap: 1em;
 }
-.volume-slider{
-    width: 100px;
+.volume-slider {
+  width: 100px;
 }
 /* / right section - volume control */
 
 /* ---------------------- / Footer ---------------------- */
-
